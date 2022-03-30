@@ -1,8 +1,16 @@
 import React from 'react'; 
 import './App.css';
 
-function Thursday() { 
+/*function Thursday() { 
   return <h1>Today is Thursday!</h1>;
+}
+
+function Movie() {
+  return <h1>I like Movie!</h1>;
+}*/
+
+function Food({fav}) {
+  return <h1>I like {fav}</h1>;
 }
 
 function App() {
@@ -10,8 +18,10 @@ function App() {
     /*<div className="App"/>;*/
     <div>
       
-      <h1>I'm tired!</h1>
-      <Thursday />
+      <Food fav="kimchi"/>
+      <Food fav="rameni"/>
+      <Food fav="samgiopsal"/>
+      <Food fav="chukumi"/>
     </div>
   );
 }
